@@ -1,0 +1,23 @@
+management:
+  security:
+    enabled: false
+server:
+  ssl:
+    keystore: classpath:graceKeyStore.jks
+    key-store-password: password
+    key-store-type: JKS
+    key-alias: grace
+    key-password: password
+---
+spring:
+  profiles: dev
+server:
+  port: 8000
+---
+spring:
+    profiles: test
+server:
+  port: 9000
+
+log:
+  Level: INFO
