@@ -11,6 +11,8 @@
     <modules>
         <module>spring-4</module>
         <module>spring-boot</module>
+        <module>spring-cloud</module>
+        <module>spring-cloud</module>
     </modules>
 
     <properties>
